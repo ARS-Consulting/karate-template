@@ -20,13 +20,14 @@ Feature: Get API Demo
              Then status 200
               And print response
               And match response == expected_output
+              And match response.name == "Angle"
+
 
         Scenario: Check if the Store response status is 404
             Given path 'store/order/1'
              When method Get
              Then status 404
               And print response
-    
 
 
     
