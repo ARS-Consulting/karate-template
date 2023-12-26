@@ -22,7 +22,6 @@ Feature: Get API Demo
               And match response == expected_output
               And match response.name == "Angle"
 
-
         Scenario: Check if the Store response status is 404
             Given path 'store/order/1'
              When method Get
