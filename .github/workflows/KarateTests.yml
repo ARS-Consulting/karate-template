@@ -41,17 +41,6 @@ jobs:
         # A file, directory or wildcard pattern that describes what to upload
         path: ///home/runner/work/karate-template/karate-template/target/karate-reports/
         # The desired behavior if no files are found using the provided path.
-
-    - name: ANY REPROT - GH Pages Push - SAME REPO
-      uses: PavanMudigonda/html-reporter-github-pages@v1.2
-      with:
-        test_results: ///home/runner/work/karate-template/karate-template/target/karate-reports
-        #keep_reports: 20
-        gh_pages: gh_pages # BRANCH NAME you like
-        #subfolder: docs  # Level 1 Folder Structure you like
-        #tool_name: cucumber # Level 2 Folder Structure you like
-        #workflow_name: ${{ github.workflow }} # Level 3 Folder Structure you like
-        #env: QA # Level 4 Folder Structure you like
         
     #- name: Deploy report page to Github Page
     #  uses: peaceiris/actions-gh-pages@v3
