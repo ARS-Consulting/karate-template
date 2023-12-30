@@ -10,9 +10,9 @@ name: Execute API and UI tests
 
 on:
   push:
-    branches: [ "january_feature" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "january_feature" ]
+    branches: [ "main" ]
 
 jobs:
   build:
