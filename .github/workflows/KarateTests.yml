@@ -31,7 +31,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean test
-
+   
     - name: Upload Test Results
       uses: actions/upload-artifact@v4.0.0
       with:
@@ -40,5 +40,11 @@ jobs:
         # A file, directory or wildcard pattern that describes what to upload
         path: ///home/runner/work/karate-template/karate-template/target/karate-reports/
         # The desired behavior if no files are found using the provided path.
-
+    
+    - name: Deploy report page to Github Page
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        publish_dir: ///home/runner/work/karate-template/karate-template/target/karate-reports/
+      
    
