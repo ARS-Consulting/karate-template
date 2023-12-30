@@ -1,3 +1,4 @@
+@preety
 Feature: Get API Demo
 
         Background:
@@ -12,6 +13,7 @@ Feature: Get API Demo
              When method POST
              Then status 200
               And print response
+              And listen 5000
 
 
         Scenario: Check if the Pets response status is 200
