@@ -42,10 +42,10 @@ jobs:
         path: ///home/runner/work/karate-template/karate-template/target/karate-reports/
         # The desired behavior if no files are found using the provided path.
     
-    - name: Deploy report page to Github Page
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{secrets.GITHUB_TOKEN}}
-        publish_dir: ///home/runner/work/karate-template/karate-template/target/karate-reports
+    #- name: Deploy report page to Github Page
+    #  uses: peaceiris/actions-gh-pages@v3
+    #  with:
+    #    github_token: ${{secrets.GITHUB_TOKEN}}
+    #    publish_dir: ///home/runner/work/karate-template/karate-template/target/karate-reports
       
    
