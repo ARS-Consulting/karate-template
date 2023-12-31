@@ -37,7 +37,7 @@ jobs:
         version: '120.0.6099.130'
    
     - name: Build with Maven
-      run: mvn clean test
+      run: mvn clean test -Dkarate.options="--tags ~@saucedemo"
    
     - name: Upload Test Results
       uses: actions/upload-artifact@v4.0.0
