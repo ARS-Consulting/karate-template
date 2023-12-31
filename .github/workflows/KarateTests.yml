@@ -30,6 +30,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+        
+    - name: Install Chrome
+      uses: logikal-io/install-chrome@v1
+      with:
+        version: '120.0.6099.130'
+   
     - name: Build with Maven
       run: mvn clean test
    
